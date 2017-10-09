@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href='http://fonts.googleapis.com/css?family=Eagle+Lake' rel='stylesheet' type='text/css'>
+    <script src = "modernizr-2.js"></script>
+    <meta charset="utf-8">
+    <title>Ink and Edges Contact</title>
+	<link href="main.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="Ink and Edges is a company that sharpens knives as well as other tools and makes pens to special order" />
+    <meta name="keywords" content="ink, edges, sharpening services, pens, unique, contact" />
+
+<style type="text/css">
+
+form {
+	margin-top:1em;
+	padding:1em;
+	font-size:16px;
+	color:white;
+}
+
+#formcontainer {
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.labelfloatleft label {
+	width:150px;
+	margin-right:10px;
+	color:white;
+	float:left;
+	text-align:right;
+}
+
+.labelfloatleft input{
+	display:block;
+	margin-bottom:8px;
+	padding-bottom:5px;
+}
+
+fieldset {
+	margin-bottom:1em;
+	padding:5px;
+	border:solid 2px #EDDEB5;
+	display:block;
+}
+
+legand{
+	color:white;
+	padding:10px
+}
+
+label{
+	color:white;
+}
+
+input.text {
+	background-color:#F0EEA4;
+}
+
+fieldset.group{
+	float:none;
+	border:0;
+	margin-bottom:5px;
+	padding:0;
+}
+
+textarea {
+	display:block;
+}
+
+select{
+	display:block;
+	margin:0 0 8px 0;
+	padding:0 0 5px 0;
+}
+
+input.button{
+	color:black;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding:4px;
+	background-color: #EDDEB5;
+	border:2px solid black;
+	display:inline;
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+<header><img src="images/inkbanner.jpg" width="770" height="270" alt="ink and edges banner"/>
+
+<nav>
+  <ul>
+    <li><a href = "index.htm">Home</a></li>
+    <li><a href = "contact.htm">Contact</a></li>
+    <li><a href = "pens.htm">Pens</a></li>
+    <li><a href = "sharpening.htm">Sharpening</a></li>
+    <li><a href = "pricing.htm">Pricing</a></li>
+  </ul>
+</nav>
+
+</header>
+
+<section id="main"><!-- main section -->
+<div id = "formcontainer">
+
+<form id="contact" method="post" action= "formHandler.php">
+
+<fieldset class="labelfloatleft"><legend>Your Contact Information</legend>
+    <label for="firstname">First Name</label>
+    <input type="text" name="FirstName" id="firstname" size="15" />
+    <label for="lastname">Last Name</label>
+    <input type="text" name="LastName" id="lastname" size="20" />
+    <label for="phone">Phone</label>
+    <input type="text" name="Phone" id="phone" size="12" maxlength="12" />
+    <label for="address1">Address Line 1</label>
+    <input type="text" name="Address1" id="address1" size="30" />
+    <label for="address2">Address Line 2</label>
+    <input type="text" name="Address2" id="address2" size="30" />
+    <label for="city">City</label>
+    <input type="text" name="City" id="city" size="25" />
+    <label for="state">State</label>
+	<select name="State" id="state">
+		<option value="IA" selected="selected">IA</option>
+		<option value="MN">MN</option>
+		<option value="MO">MO</option>
+		<option value="NE">NE</option>
+	</select>
+    <label for="Zip">Zip Code</label>
+    <input type="text" name="zip" id="zip" size="5" maxlength="5" />
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" size="40" maxlength="40"/>
+
+</fieldset>
+    
+    <fieldset><legend>This is in regards to</legend>
+       	<input type="radio" name="regarding" id="sharpening" value="sharpening" checked="checked"/>
+    	<label for="sharpening">Sharpening</label>
+        
+    	<input type="radio" name="regarding" id="pens" value="pens" />
+    	<label for="pens">Pens</label>
+          
+    	<input type="radio" name="regarding" id="both" value="both" />
+    	<label for="both">Both</label>  
+    </fieldset>    
+    	<p>&nbsp;</p>
+    <fieldset><legend> I would be interested in: (check all that apply)</legend>
+    	<fieldset class="group">
+        	<input type="checkbox" name="interested" id="inventory" value="inventory" />
+            <label for="inventory">seeing what you have in inventory for pens</label>
+    	</fieldset>
+    
+    <fieldset class="group">
+    	<input type="checkbox" name="interested" id="consult" value="consult" />
+        <label for="consult">setting up a consult meeting</label>
+    </fieldset>
+    
+    <fieldset class="group">
+    	<input type="checkbox" name="interested" id="custom" value="custom" />
+        <label for="custom">custom ordered pen</label>
+    </fieldset>
+    
+    <fieldset class="group">
+    	<input type="checkbox" name="interested" id="quote" value="quote" />
+        <label for="quote">price quote</label>
+    
+    </fieldset>               
+    </fieldset>  
+    
+    <fieldset><label for="message">Message</label>
+    <textarea name="message" id="message" rows="10" cols="65"></textarea>
+
+    
+    <input type="submit" value="Send Information" class="button" />
+    <input type="reset" value="Reset" class="button" />       
+    </fieldset>    
+ </form>
+
+</div> <!-- end formcontainer -->
+
+</section><!-- end main section -->
+
+
+<footer>
+
+<p>&copy;Ink and Edges 2013</p>
+
+</footer>
+
+
+</div> <!--endcontainer-->
+
+</body>
+</html>
+

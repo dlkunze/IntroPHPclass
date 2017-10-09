@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV341 Intro PHP - Project-6 Form Handlers Homework</title>
+</head>
+
+<body>
+<h1>WDV341 Intro HTML</h1>
+<h3>Project-2b Form Handlers - Homework</h3>
+<p>Complete the following exercises. When finished upload to your server. Update   your links on your WDV341 Homework page to include this assignment. Zip your work and attach it to your Blackboard assignment and submit it to Blackboard.</p>
+<p>1. Given the form below create a PHP form handler that will create a confirmation page. The page should display all of the data from this form in the confirmation message. </p>
+<p>2. Given the form below create a PHP form handler that will create a confirmation page that emails the form data to the customer.</p>
+<form id="form1" name="form1" method="post" action="Project2b formhandler.php">
+
+  <fieldset>
+    <legend>Customer Loyalty Registration</legend>
+  <table width="60%" border="0">
+    <tr>
+      <td>Title:</td>
+      <td><select name="cusTitle" id="cusTitle">
+      	<option value="">Please select a title</option>
+        <option value="Mr">Mr.</option>
+        <option value="Mrs">Mrs.</option>
+        <option value="Miss">Miss</option>
+        <option value="Sir">Sir</option>
+        <option value="Madame">Madame</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td width="17%">First Name</td>
+      <td width="83%"><input type="text" name="cusFirstName" id="cusFirstName" /></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type="text" name="cusLastName" id="cusLastName" /></td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td><input type="text" name="cusAddress" id="cusAddress" /></td>
+    </tr>
+    <tr>
+      <td>City </td>
+      <td><input type="text" name="cusCity" id="cusCity" /></td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td><input type="text" name="cusState" id="cusState" /></td>
+    </tr>
+    <tr>
+      <td>Zip</td>
+      <td><input type="text" name="cusZip" id="cusZip" /></td>
+    </tr>
+    <tr>
+      <td>Email Address</td>
+      <td><input type="text" name="cusEmail" id="cusEmail" /></td>
+    </tr>
+
+    <tr>
+      <td>Phone Number:</td>
+      <td><input type="text" name="cusPhone" id="cusPhone" /></td>
+    </tr>
+
+    <tr>
+      <td>Please Send:</td>
+      <td>Online Specials: 
+        <input type="checkbox" name="cusCouponsOnline" id="cusCouponsOnline" />
+      Coupons  <input type="checkbox" name="cusSpecialEvents" id="cusSpecialEvents" />
+      Special Events 
+      (Choose all that apply)</td>
+    </tr>
+
+    <tr>
+      <td>Shopping Frequency:</td>
+      <td>
+        <table width="200">
+          <tr>
+            <td><label>
+              <input type="radio" name="Shopping Frequency" value="1" id="RadioGroup1_0" />
+              Less than once a week</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="radio" name="Shopping Frequency" value="2" id="RadioGroup1_1" />
+              At least once a week</label></td>
+          </tr>
+          <tr>
+            <td><label>
+              <input type="radio" name="Shopping Frequency" value="3" id="RadioGroup1_2" />
+              More than once a week</label></td>
+          </tr>
+      </table></td>
+    </tr>
+
+  </table>
+  <p>
+    <input type="submit" name="button" id="button" value="Register" />
+    <input type="reset" name="button2" id="button2" value="Try again!" />
+  </p>
+
+
+  </fieldset>
+</form> 
+
+<p>&nbsp;</p>
+</body>
+</html>

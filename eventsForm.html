@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Events Form Page</title>
+
+<style type="text/css">
+
+body{
+background-image: url(background.jpg);
+}
+
+form {
+	margin-top:1em;
+	padding:1em;
+	font-size:16px;
+}
+
+#formcontainer {
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:75px;
+}
+
+.labelfloatleft label {
+	width:150px;
+	margin-right:10px;
+	color:white;
+	float:left;
+	text-align:right;
+}
+
+.labelfloatleft input{
+	display:block;
+	margin-bottom:8px;
+	padding-bottom:5px;
+}
+
+fieldset {
+	margin-bottom:1em;
+	padding:5px;
+	border:solid 2px #D296DB;
+	display:block;
+}
+
+.set{
+	text-align:center;
+	color: white;
+	font-size:24px;
+	padding:15px;
+}
+
+input.text {
+	background-color:#F0EEA4;
+}
+
+textarea {
+	display:block;
+}
+
+select{
+	display:block;
+	margin:0 0 8px 0;
+	padding:0 0 5px 0;
+}
+
+input.button{
+	color:black;
+	text-transform: uppercase;
+	font-weight:bold;
+	padding:4px;
+	background-color: #3DF7E2;
+	border:1px solid black;
+	display:inline;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id = "formcontainer">
+
+<form id="eventForm" name="eventForm" method="post" action= "insertEvent.php">
+
+<fieldset class="labelfloatleft"><legend class="set">Add Your Event Here!</legend>
+    <label for="eventName">Event Name</label>
+    <input type="text" name="event_name" id="event_name" size="75" />
+    <label for="eventPresenter">Event Presenter</label>
+    <input type="text" name="event_presenter" id="event_presenter" size="35" />
+    <label for="eventDate">Event Date</label>
+    <input type="text" name="event_date" id="event_date" size="15"  />
+    <label for="eventTime">Event Time</label>
+    <input type="text" name="event_time" id="event_time" size="15" />
+    
+    <label for="eventDescription">Event Description</label>
+    <textarea name="event_description" id="event_description" rows="10" cols="65"></textarea>
+
+<br />    
+    <input class= "button" type="submit" value="Add Event"  />
+    <input class="button" type="reset" value="Reset"  />       
+    </fieldset>    
+ </form>
+
+</div> <!-- end formcontainer -->
+
+
+
+
+
+
+</form>
+</body>
+</html>
